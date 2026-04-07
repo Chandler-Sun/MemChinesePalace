@@ -1,7 +1,7 @@
 """
 CLI 命令行界面
 
-mempalace [命令] [参数]
+wenjian [命令] [参数]
 """
 
 from __future__ import annotations
@@ -40,7 +40,7 @@ def _load_components(palace_path: Optional[str] = None):
 
 
 @click.group()
-@click.version_option("1.0.0", prog_name="MemChinesePalace")
+@click.version_option("1.0.0", prog_name="wenjian")
 def main():
     """
     \b
@@ -80,8 +80,8 @@ def init(directory: str, palace: Optional[str]):
         f"  宫殿路径：{config.palace_path}\n"
         f"  新建殿：[bold]{dian_name}[/bold]\n\n"
         f"下一步：\n"
-        f"  [cyan]mempalace mine {directory}[/cyan]          # 挖掘项目文件\n"
-        f"  [cyan]mempalace mine ~/chats/ --mode convos[/cyan]  # 挖掘对话记录",
+        f"  [cyan]wenjian mine {directory}[/cyan]             # 挖掘项目文件\n"
+        f"  [cyan]wenjian mine ~/chats/ --mode convos[/cyan]  # 挖掘对话记录",
         title="记忆宫殿·初始化",
         border_style="blue",
     ))

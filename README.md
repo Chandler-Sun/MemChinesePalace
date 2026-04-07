@@ -77,19 +77,19 @@ pip install memchinesepalace
 
 ```bash
 # 初始化宫殿，关联项目
-mempalace init ~/myproject
+wenjian init ~/myproject
 
 # 挖掘项目文件
-mempalace mine ~/myproject
+wenjian mine ~/myproject
 
 # 挖掘 AI 对话记录
-mempalace mine ~/chats/ --mode convos --dian myproject
+wenjian mine ~/chats/ --mode convos --dian myproject
 
 # 搜索记忆
-mempalace search "为什么换了数据库"
+wenjian search "为什么换了数据库"
 
 # 查看状态
-mempalace status
+wenjian status
 ```
 
 ### 连接 Claude / Cursor（MCP）
@@ -169,7 +169,7 @@ Claude 自动调用 `mcp_search`，用文简检索，秒级回答。
 
 ```bash
 # 生成唤醒上下文（L0+L1），粘贴进本地模型系统提示
-mempalace wakeup > context.txt
+wenjian wakeup > context.txt
 ```
 
 每次对话只加载约 170 token，按需搜索。全年费用约 $10。
@@ -445,10 +445,10 @@ Tunnels (道) auto-connect same-named rooms across wings — one topic, multiple
 ```bash
 pip install memchinesepalace
 
-mempalace init ~/myproject
-mempalace mine ~/myproject
-mempalace search "why did we switch databases"
-mempalace status
+wenjian init ~/myproject
+wenjian mine ~/myproject
+wenjian search "why did we switch databases"
+wenjian status
 ```
 
 ### MCP (Claude/Cursor)

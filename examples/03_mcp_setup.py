@@ -72,7 +72,21 @@ Claude 自动调用 `mcp_search`，从竹简中检索相关文简。
 每次对话开始时，Claude 自动调用 `mcp_status` 加载 L0+L1 上下文（约170 token），
 记住所有历史决策、偏好和关键事实。
 
-## 20 个 MCP 工具
+## CLI 命令（wenjian）
+
+```bash
+wenjian init <dir>              # 初始化
+wenjian mine <dir>              # 挖掘项目
+wenjian mine <dir> --mode convos # 挖掘对话
+wenjian search "query"          # 搜索
+wenjian search "q" --dian proj  # 限定殿
+wenjian add "内容" --dian proj  # 添加记忆
+wenjian compress "文本"         # 压缩为文简
+wenjian wakeup                  # 唤醒上下文
+wenjian status                  # 宫殿状态
+wenjian wenjian-spec            # 文简规范
+wenjian mcp-server              # 启动 MCP 服务器
+```
 
 | 工具 | 功能 |
 |---|---|

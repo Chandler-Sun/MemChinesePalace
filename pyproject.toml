@@ -46,12 +46,12 @@ dev = [
 ]
 
 [project.scripts]
-mempalace = "memchinesepalace.cli:main"
+wenjian = "memchinesepalace.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/your-org/MemChinesePalace"
-Repository = "https://github.com/your-org/MemChinesePalace"
-Issues = "https://github.com/your-org/MemChinesePalace/issues"
+Homepage = "https://github.com/ChandlerSun/MemChinesePalace"
+Repository = "https://github.com/ChandlerSun/MemChinesePalace"
+Issues = "https://github.com/ChandlerSun/MemChinesePalace/issues"
 
 [tool.setuptools.packages.find]
 where = ["."]
