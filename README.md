@@ -1,4 +1,4 @@
-# 记忆宫殿 · MemChinesePalace
+# 文简 · 记忆宫殿 · MemChinesePalace
 
 **用文言文压缩大模型记忆。两千年优化的语言，遇见现代 AI。**
 
