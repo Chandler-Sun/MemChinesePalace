@@ -105,7 +105,7 @@ class MemoryStack:
         生成唤醒上下文，直接注入LLM系统提示
 
         格式：
-        [文简规范（首次）] + [L0·心法] + [L1·要略]
+        [文简规范（首次）] + [L0·心法] + [殿身份（若有）] + [L1·要略]
         """
         max_tokens = max_tokens or self.config.max_wake_up_tokens
         parts = []
@@ -116,6 +116,12 @@ class MemoryStack:
         l0 = self.build_l0()
         if l0.content:
             parts.append(f"【心法·L0】\n{l0.content}")
+
+        # 殿级别的身份文简（identity_wenjian）
+        if dian_name:
+            dian = self.palace.get_dian(dian_name)
+            if dian and dian.identity_wenjian:
+                parts.append(f"【殿·{dian_name}】\n{dian.identity_wenjian}")
 
         l1 = self.build_l1(dian_name)
         if l1.content:
