@@ -417,6 +417,16 @@ MIT
 
 ---
 
+## 致谢 · Acknowledgements
+
+本项目的宫殿结构设计（殿/轩/简/牍/廊/道）及整体记忆系统架构，灵感来自 [MemPalace](https://github.com/milla-jovovich/mempalace)——据说是目前基准测试分数最高的开源 AI 记忆系统。
+
+MemChinesePalace 在其架构思想基础上，以**文言文**替代 AAAK 作为压缩核心，专为中文语境和汉字语义密度优化而生。
+
+> *The palace structure (Dian/Xuan/Jian/Du/Lang/Dao) and memory system architecture are inspired by [MemPalace](https://github.com/milla-jovovich/mempalace), the highest-scoring open-source AI memory system ever benchmarked. MemChinesePalace builds on its architectural ideas, replacing the AAAK dialect with Classical Chinese (文言文) as the compression core.*
+
+---
+
 ## English
 
 MemChinesePalace uses **Classical Chinese (文言文) as the compression core** for LLM memory systems.
