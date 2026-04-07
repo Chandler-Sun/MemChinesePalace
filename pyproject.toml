@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "memchinesepalace"
-version = "1.0.0"
+version = "0.2.0"
 description = "Classical Chinese as the ultimate LLM memory compression core — 文言文记忆宫殿"
 readme = "README.md"
 license = "MIT"

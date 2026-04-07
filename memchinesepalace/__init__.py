@@ -3,7 +3,7 @@ MemChinesePalace — 文言文记忆宫殿
 用文言文作为大模型记忆系统的压缩核心
 """
 
-__version__ = "1.0.0"
+__version__ = "0.2.0"
 __author__ = "MemChinesePalace Contributors"
 
 from .palace import Palace, Dian, Xuan, Jian, Du

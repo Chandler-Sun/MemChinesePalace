@@ -40,7 +40,7 @@ def _load_components(palace_path: Optional[str] = None):
 
 
 @click.group()
-@click.version_option("1.0.0", prog_name="wenjian")
+@click.version_option("0.2.0", prog_name="wenjian")
 def main():
     """
     \b
